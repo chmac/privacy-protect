@@ -1,13 +1,15 @@
 <script lang="ts">
+  import { base } from "$app/paths";
+
   const links = [
-    { href: "/privacy-and-terms", text: "Privacy" },
-    { href: "/privacy-and-terms", text: "Terms" },
-    { href: "/security", text: "Security" },
+    { href: `${base}/privacy-and-terms`, text: "Privacy" },
+    { href: `${base}/privacy-and-terms`, text: "Terms" },
+    { href: `${base}/security`, text: "Security" },
     {
       href: "https://github.com/therockstorm/privacy-protect",
       text: "GitHub",
     },
-    { href: "/blog", text: "Blog" },
+    { href: `${base}/blog`, text: "Blog" },
   ];
   const date = new Date().getFullYear();
 </script>

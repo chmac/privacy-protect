@@ -8,6 +8,7 @@ export default {
   extensions: [".md", ".svelte"],
   kit: {
     adapter: adapter(),
+    paths: { base: "/privacy-protect" },
     alias: {
       $components: resolve("src/components"),
       $icons: resolve("src/assets/icons"),

@@ -17,6 +17,7 @@
   import { encryptBySecretType } from "$lib/encrypt.js";
   import { SITE_TITLE, SITE_URL } from "$lib/seo.js";
   import { getFileName, templateSecret } from "$lib/template-secret.js";
+  import { base } from "$app/paths";
   import {
     MAX_FILE_SIZE_MB,
     validateFile,
@@ -158,7 +159,7 @@
       Securely share passwords and sensitive files over email or store them in
       insecure locations like cloud drives. No special software or account—just
       a desktop or mobile web browser like Chrome or Safari. See the
-      <a href="/blog/introducing-privacyprotect">launch blog</a> for details.
+      <a href="{base}/blog/introducing-privacyprotect">launch blog</a> for details.
     </p>
     <p>
       Are you a developer? It's
@@ -201,9 +202,9 @@
         <li>Click <strong>Reveal secret</strong>.</li>
       </ol>
       Here are examples of a PrivacyProtected{" "}<a
-        href="/example-message.html">message</a
+        href="{base}/example-message.html">message</a
       >
-      and <a href="/example-image.html">image file</a>. Try "dog" for the
+      and <a href="{base}/example-image.html">image file</a>. Try "dog" for the
       password.
     </details>
   </Prose>
