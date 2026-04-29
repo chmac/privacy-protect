@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-vercel";
+import adapter from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/kit/vite";
 import { mdsvex } from "mdsvex";
 import { resolve } from "path";
@@ -8,6 +8,7 @@ export default {
   extensions: [".md", ".svelte"],
   kit: {
     adapter: adapter(),
+    paths: { base: "/privacy-protect" },
     alias: {
       $components: resolve("src/components"),
       $icons: resolve("src/assets/icons"),

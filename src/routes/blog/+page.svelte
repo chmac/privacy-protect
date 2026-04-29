@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import Card from "$components/Card.svelte";
   import Prose from "$components/Prose.svelte";
   import { formatDate } from "$lib/date.js";
@@ -30,7 +31,7 @@
 
     <div class="not-prose flex max-w-3xl flex-col space-y-16">
       {#each data.posts as post}
-        <a href={post.path}>
+        <a href="{base}{post.path}">
           <Card>
             <h2
               class="text-base font-semibold tracking-tight text-zinc-800"

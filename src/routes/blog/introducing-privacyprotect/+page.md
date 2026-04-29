@@ -9,6 +9,7 @@ slug: "introducing-privacyprotect"
 ---
 
 <script lang="ts">
+import { base } from "$app/paths";
 import Figure from '$components/Figure.svelte'
 import example from "./example.png";
 </script>
@@ -37,19 +38,19 @@ Most password managers let you do this. But I can't convince my dad (and other f
 
 So, when I heard about [Portable Secret](https://mprimi.github.io/portable-secret/), I smiled. A dead simple way to share and store passwords, files, and images. However, the creator, [Marco](https://www.mpri.me/), [has little time for upkeep](https://github.com/mprimi/portable-secret/discussions/29), and the security landscape changes fast.
 
-[Enter PrivacyProtect](/). Share passwords and sensitive files over email or store them in insecure locations like cloud drives using nothing more than desktop or mobile web browsers like Chrome and Safari.
+[Enter PrivacyProtect](../../). Share passwords and sensitive files over email or store them in insecure locations like cloud drives using nothing more than desktop or mobile web browsers like Chrome and Safari.
 
 <Figure
   caption="PrivacyProtect: share and store passwords and sensitive files with end-to-end encryption."
   small
-  src="/favicon.svg"
+  src="{base}/favicon.svg"
 />
 
 No special software. No need to create an account. It's free, [open-source](https://github.com/therockstorm/privacy-protect), keeps your private data a secret, and leaves you alone.
 
 It's so easy, my dad can use it.
 
-## [Give it a try](/)
+## [Give it a try](../../)
 
 1. Enter your secret **message** or upload a **file** you want to protect.
 1. Create a **password**.
@@ -67,7 +68,7 @@ And just like that, your secret is protected!
 1. Enter the **password**. If the recipient cannot guess the password based on the hint, give them a call and let them know.
 1. Click **Reveal secret**.
 
-Here are examples of a PrivacyProtected [message](/example-message.html) and [image file](/example-image.html). Try "dog" for the password.
+Here are examples of a PrivacyProtected [message](../../example-message.html) and [image file](../../example-image.html). Try "dog" for the password.
 
 You can also safely store the HTML file in insecure locations like cloud drives (Dropbox, iCloud, Google Drive), host it like the examples above, or keep it on your computer, phone, or USB. Even if you lose your USB drive, the secret is unreadable by anyone that finds it.
 
@@ -83,7 +84,7 @@ PrivacyProtect is a complement, not a replacement, for password managers. We've 
 - A non-obvious example: if your only goal is to keep Apple, Microsoft, etc., from reading your email or file, you could use a weak password like "123" and include the password itself in the hint. It still prevents their software from reading your file.
 - Related to the above, have you ever been pickpocketed or lost your passport in a foreign country? My friend lost his. He spent the day in the U.S. Embassy, stressed out, proving his identity. One of the items listed as "evidence of U.S. citizenship" on [travel.state.gov](https://travel.state.gov/content/travel/en/international-travel/emergencies/lost-stolen-passport-abroad.html) is a photocopy of your missing passport. Skip (some of the) stress. Keep a PrivacyProtected file on your phone or host your document to access it in a pinch.
 
-If you're short on time, you can skip the rest of this article and [start using PrivacyProtect](/) immediately; it's that simple! For those interested in details, read on.
+If you're short on time, you can skip the rest of this article and [start using PrivacyProtect](../../) immediately; it's that simple! For those interested in details, read on.
 
 ## How it works
 
@@ -93,4 +94,4 @@ For encryption, PrivacyProtect uses native browser [W3C Web Cryptography APIs](h
 
 PrivacyProtect encrypts the plaintext using [NIST-approved](https://www.nist.gov/publications/advanced-encryption-standard-aes) AES-256 in [NIST-recommended](https://csrc.nist.gov/publications/detail/sp/800-38d/final) GCM block cipher mode using the derived key and a 32-byte random initialization vector. The HTML file contains the resulting ciphertext, initialization vector, and salt needed for decryption.
 
-PrivacyProtect improves on [Portable Secret](https://mprimi.github.io/portable-secret/), provides better protection than [password-protected archives](https://security.stackexchange.com/questions/35818/are-password-protected-zip-files-secure), and is free and [open-source](https://github.com/therockstorm/privacy-protect). [Give it a try](/); I'd love to hear your feedback!
+PrivacyProtect improves on [Portable Secret](https://mprimi.github.io/portable-secret/), provides better protection than [password-protected archives](https://security.stackexchange.com/questions/35818/are-password-protected-zip-files-secure), and is free and [open-source](https://github.com/therockstorm/privacy-protect). [Give it a try](../../); I'd love to hear your feedback!
