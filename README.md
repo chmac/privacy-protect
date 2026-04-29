@@ -1,3 +1,6 @@
+> [!WARNING]
+> This is a fork of [therockstorm/privacy-protect](https://github.com/therockstorm/privacy-protect) created to address [#69](https://github.com/therockstorm/privacy-protect/issues/69) and [#130](https://github.com/therockstorm/privacy-protect/issues/130). Hopefully those will be fixed upstream and this fork can be retired.
+
 <h1 align="center">PrivacyProtect</h1>
 <p align="center">
   End-to-end encryption without special software or accounts; only native web browser crypto APIs.
